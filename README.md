@@ -11,7 +11,8 @@ A simple usage example:
 import 'package:urlspliter/urlspliter.dart';
 
 main() {
-  var awesome = new Awesome();
+  var spliter = new UrlSpliter();
+  var seqs = sliter.process();
 }
 ```
 
