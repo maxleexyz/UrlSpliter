@@ -6,7 +6,7 @@ void main() {
     UrlSpliter spliter;
 
     setUp(() {
-      spliter = UrlSpliter('haha');
+      spliter = UrlSpliter('hahahahahah');
     });
 
     test('First Test', () {

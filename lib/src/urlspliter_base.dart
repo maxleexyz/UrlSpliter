@@ -15,7 +15,7 @@ class UrlSpliter{
   static const int TESTING = 1;
   static const int FETCHING = 2;
   UrlSpliter(this.text);
-  List<String> validWord = 'qazxswedcvfrtgbnhyujmkiolpQAZXSWEDCVFRTGHBNYUJMKIOLP1234567890://=+?&#-_.'.split("");
+  List<String> validWord = 'qazxswedcvfrtgbnhyujmkiolpQAZXSWEDCVFRTGHBNYUJMKIOLP1234567890://=+?&#-_.%@*~^()'.split("");
   List<String> testBuffer = new List<String>();
   List<String> sequnceBuffer = new List<String>();
   List<String> urlBuffer = new List<String>();

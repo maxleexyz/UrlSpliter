@@ -15,3 +15,7 @@
 ## 0.1.3
 
 - check testbuffer length in tail
+
+## 0.1.4
+
+- add more char of url
