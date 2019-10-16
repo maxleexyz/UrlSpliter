@@ -11,3 +11,7 @@
 ## 0.1.2
 
 - check sequece length
+
+## 0.1.3
+
+- check testbuffer length in tail
