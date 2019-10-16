@@ -33,7 +33,9 @@ class UrlSpliter{
   startTest(String w){
     this.state = TESTING;
     this.testBuffer.add(w);
-    this.results.add(TextSpanData(this.sequnceBuffer.join(''), TextSpanData.TXT));
+    if (this.sequnceBuffer.length > 0){
+      this.results.add(TextSpanData(this.sequnceBuffer.join(''), TextSpanData.TXT));
+    }
     this.sequnceBuffer.clear();
   }
 

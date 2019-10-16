@@ -6,11 +6,14 @@ void main() {
     UrlSpliter spliter;
 
     setUp(() {
-      spliter = UrlSpliter('123 http://abc xx');
+      spliter = UrlSpliter('sssshttp://abc ssss');
     });
 
     test('First Test', () {
       final result = spliter.process();
+      for (var span in result){
+        print("${span.content} : ${span.contentType}");
+      }
       expect(result.length == 3, isTrue);
       int idx = 0;
       for (var textSpandata in result){
