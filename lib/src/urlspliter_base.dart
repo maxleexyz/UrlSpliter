@@ -75,6 +75,10 @@ class UrlSpliter{
   }
 
   checkTail(){
+    if (this.urlBuffer.length > 0){
+      this.results.add(TextSpanData(this.urlBuffer.join(''), TextSpanData.URL));
+      this.urlBuffer.clear();
+    }
     if (this.sequnceBuffer.length > 0){
       this.results.add(TextSpanData(this.sequnceBuffer.join(''), TextSpanData.TXT));
       this.sequnceBuffer.clear();
