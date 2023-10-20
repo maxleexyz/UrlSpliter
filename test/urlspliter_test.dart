@@ -3,18 +3,17 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    UrlSpliter spliter;
-
-    setUp(() {
-      spliter = UrlSpliter('hahahahahah');
-    });
+    setUp(() {});
 
     test('First Test', () {
+      UrlSpliter spliter;
+      spliter = UrlSpliter('hahahahahah');
+
       final result = spliter.process();
-      for (var span in result){
-        print("${span.content} : ${span.contentType}");
+      for (var span in result) {
+        print('${span.content} : ${span.contentType}');
       }
-      expect(result.length > 0, isTrue);
+      expect(result.isNotEmpty, isTrue);
     });
   });
 }
